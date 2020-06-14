@@ -36,7 +36,7 @@
         <li><a href="https://github.com/RepoSense/reposense" target="_blank" class="nav-link"><span><span aria-hidden="true" class="fab fa-github"></span></span></a></li>
         <li slot="right">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -45,24 +45,50 @@
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <p><span class="lead"><strong><strong>USER GUIDE</strong></strong></span></p>
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/ug/index.html" class="site-nav__a"><strong>Overview</strong></a></li>
-            <li class="mt-2"><a href="/ug/usingReports.html" class="site-nav__a"><strong>Using reports</strong></a></li>
-            <li class="mt-2"><a href="/ug/generatingReports.html" class="site-nav__a"><strong>Generating reports</strong></a></li>
-            <li class="mt-2"><a href="/ug/customizingReports.html" class="site-nav__a"><strong>Customizing reports</strong></a></li>
-            <li class="mt-2"><a href="/ug/sharingReports.html" class="site-nav__a"><strong>Sharing reports</strong></a>
-              <br><br>
-              <strong>Appendices</strong><br></li>
-            <li class="mt-2"><a href="/ug/cli.html" class="site-nav__a">  CLI syntax reference</a></li>
-            <li class="mt-2"><a href="/ug/configFiles.html" class="site-nav__a">  Config files format</a></li>
-            <li class="mt-2"><a href="/ug/usingAuthorTags.html" class="site-nav__a">  Using <code>@@author</code> tags</a></li>
-            <li class="mt-2"><a href="/ug/withNetlify.html" class="site-nav__a">  RepoSense with Netlify</a></li>
-            <li class="mt-2"><a href="/ug/withGithubActions.html" class="site-nav__a">  RepoSense with GitHub Actions</a></li>
-            <li class="mt-2"><a href="/ug/withTravis.html" class="site-nav__a">  RepoSense with Travis</a></li>
-            <li class="mt-2"><a href="/ug/runSh.html" class="site-nav__a">  <code>run.sh</code> format</a></li>
-            <li class="mt-2"><a href="/ug/faq.html" class="site-nav__a">  FAQ</a></li>
-            <li class="mt-2"><a href="/ug/troubleshooting.html" class="site-nav__a current">  Troubleshooting</a>
-              <br><br><br></li>
+          <ul class="site-nav-list site-nav-list-root">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/index.html"><strong>Overview</strong></a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/usingReports.html"><strong>Using reports</strong></a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/generatingReports.html"><strong>Generating reports</strong></a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/customizingReports.html"><strong>Customizing reports</strong></a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/sharingReports.html"><strong>Sharing reports</strong></a></div>
+            </li>
+            <li><strong>Appendices</strong></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/cli.html">  CLI syntax reference</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/configFiles.html">  Config files format</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/usingAuthorTags.html">  Using <code v-pre="">@@author</code> tags</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/withNetlify.html">  RepoSense with Netlify</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/withGithubActions.html">  RepoSense with GitHub Actions</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/withTravis.html">  RepoSense with Travis</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/runSh.html">  <code v-pre="">run.sh</code> format</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/faq.html">  FAQ</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/ug/troubleshooting.html" class="current">  Troubleshooting</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -87,7 +113,7 @@
         <p>It is possible you may have some file names with <a href="https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#naming-conventions">special characters</a> in them, which is disallowed in Windows OS. As such, <em>RepoSense</em> is unable to fully clone your repository, thus failing the analysis.</p>
 
         <h3 id="some-files-are-not-captured-by-reposense">Some files are not captured by RepoSense<a class="fa fa-anchor" href="#some-files-are-not-captured-by-reposense" onclick="event.stopPropagation()"></a></h3>
-        <p>The files may be <a href="https://en.wikipedia.org/wiki/Binary_file">binary files</a>. RepoSense does not analyze binary files. Common binary files include images (<code>.jpg</code>, <code>.png</code>), applications (<code>.exe</code>), zip files (<code>.zip</code>, <code>.rar</code>) and certain document types (<code>.docx</code>, <code>.pptx</code>).</p>
+        <p>The files may be <a href="https://en.wikipedia.org/wiki/Binary_file">binary files</a>. RepoSense does not analyze binary files. Common binary files include images (<code v-pre="">.jpg</code>, <code v-pre="">.png</code>), applications (<code v-pre="">.exe</code>), zip files (<code v-pre="">.zip</code>, <code v-pre="">.rar</code>) and certain document types (<code v-pre="">.docx</code>, <code v-pre="">.pptx</code>).</p>
       </div>
 
 
@@ -111,7 +137,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 9 Jun 2020, 5:36:13 UTC]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sun, 14 Jun 2020, 4:17:16 UTC]</small></div>
     </footer>
   </div>
 </body>

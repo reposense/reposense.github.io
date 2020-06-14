@@ -34,7 +34,7 @@
         <li><a href="https://github.com/RepoSense/reposense" target="_blank" class="nav-link"><span><span aria-hidden="true" class="fab fa-github"></span></span></a></li>
         <li slot="right">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -44,7 +44,7 @@
       <div id="content-wrapper">
         <h1 class="display-3" id="contact-us">Contact us<a class="fa fa-anchor" href="#contact-us" onclick="event.stopPropagation()"></a></h1>
         <p><span aria-hidden="true" class="fas fa-comment-alt"></span> You can post your questions, suggestions, and bug reports in our <a href="https://github.com/RepoSense/reposense/issues">issue tracker</a>.</p>
-        <p><span aria-hidden="true" class="fas fa-envelope"></span> Alternatively, you can email us at <code>seer@comp.nus.edu.sg</code></p>
+        <p><span aria-hidden="true" class="fas fa-envelope"></span> Alternatively, you can email us at <code v-pre="">seer@comp.nus.edu.sg</code></p>
       </div>
 
 
@@ -52,7 +52,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 9 Jun 2020, 5:36:13 UTC]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sun, 14 Jun 2020, 4:17:16 UTC]</small></div>
     </footer>
   </div>
 </body>

@@ -36,7 +36,7 @@
         <li><a href="https://github.com/RepoSense/reposense" target="_blank" class="nav-link"><span><span aria-hidden="true" class="fab fa-github"></span></span></a></li>
         <li slot="right">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right=""></searchbar>
           </form>
         </li>
       </navbar>
@@ -45,18 +45,30 @@
       <nav id="site-nav" class="navbar navbar-light bg-transparent">
         <div class="border-right-grey nav-inner position-sticky slim-scroll">
           <p><span class="lead"><strong><strong>DEVELOPER GUIDE</strong></strong></span></p>
-          <ul class="px-0 site-nav-list">
-            <li class="mt-2"><a href="/dg/index.html" class="site-nav__a"><strong>Contributing</strong></a></li>
-            <li class="mt-2"><a href="/dg/settingUp.html" class="site-nav__a"><strong>Setting up</strong></a></li>
-            <li class="mt-2"><a href="/dg/workflow.html" class="site-nav__a current"><strong>Workflow</strong></a>
-              <br><br>
-              <strong>Design and implementation</strong></li>
-            <li class="mt-2"><a href="/dg/architecture.html" class="site-nav__a">  Architecture</a></li>
-            <li class="mt-2"><a href="/dg/report.html" class="site-nav__a">  HTML report</a>
-              <br><br>
-              <strong>Appendices</strong></li>
-            <li class="mt-2"><a href="/dg/styleGuides.html" class="site-nav__a">  Style guides</a>
-              <br><br><br><br></li>
+          <ul class="site-nav-list site-nav-list-root">
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/index.html"><strong>Contributing</strong></a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/settingUp.html"><strong>Setting up</strong></a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/workflow.html" class="current"><strong>Workflow</strong></a></div>
+            </li>
+            <li><strong>Design and implementation</strong></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/architecture.html">  Architecture</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/report.html">  HTML report</a></div>
+            </li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/projectManagement.html"><strong>Project management</strong></a></div>
+            </li>
+            <li><strong>Appendices</strong></li>
+            <li>
+              <div class="site-nav-list-item-content site-nav-list-item-content-0" onclick="handleSiteNavClick(this)"><a href="/dg/styleGuides.html">  Style guides</a></div>
+            </li>
           </ul>
         </div>
       </nav>
@@ -65,10 +77,10 @@
         <div>
           <span tags="public">
             <p></p>
-            <box type="important" light background-color="yellow">
+            <box type="important" light="" background-color="yellow">
               <span class="text-danger">
-                <p>You are looking at the Developer Documentation corresponding to the most recent <em>public release</em> of RepoSense.<br>
-                  <strong>Please go <a href="https://reposense.github.io/RepoSense/dg/index.html">here</a> for the version matching the latest <code>master</code> branch.</strong></p>
+                <p>You are looking at the <em>developer documentation</em> corresponding to the most recent <em>public release</em> of RepoSense.<br>
+                  <strong>Please go <a href="https://reposense.github.io/RepoSense/dg/index.html">here</a> for the version matching the latest <code v-pre="">master</code> branch.</strong></p>
               </span></box>
           </span></div>
         <h1 class="display-4" id="workflow">Workflow<a class="fa fa-anchor" href="#workflow" onclick="event.stopPropagation()"></a></h1>
@@ -88,17 +100,17 @@
           <li>Make sure you know our coding standards.</li>
         </ul>
         <div class="indented-level2">
-          <panel minimized><template slot="_header">
+          <panel minimized=""><template slot="_header">
               <p><span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix: Coding Standards</p>
             </template>
             <div>
               <div>
                 <span tags="public">
                   <p></p>
-                  <box type="important" light background-color="yellow">
+                  <box type="important" light="" background-color="yellow">
                     <span class="text-danger">
-                      <p>You are looking at the Developer Documentation corresponding to the most recent <em>public release</em> of RepoSense.<br>
-                        <strong>Please go <a href="https://reposense.github.io/RepoSense/dg/index.html">here</a> for the version matching the latest <code>master</code> branch.</strong></p>
+                      <p>You are looking at the <em>developer documentation</em> corresponding to the most recent <em>public release</em> of RepoSense.<br>
+                        <strong>Please go <a href="https://reposense.github.io/RepoSense/dg/index.html">here</a> for the version matching the latest <code v-pre="">master</code> branch.</strong></p>
                     </span></box>
                 </span></div>
               <h1 class="display-4" id="appendix-style-guides">Appendix: Style guides<a class="fa fa-anchor" href="#appendix-style-guides" onclick="event.stopPropagation()"></a></h1>
@@ -121,15 +133,15 @@
         <ul>
           <li><strong>Follow <a href="https://se-education.org/guides/tutorials/intellijCodeStyle.html">this</a> to configure Intellij to follow our coding style</strong>.</li>
           <li><strong>This project uses Checkstyle</strong> to check the compliance of Java code. You can use <a href="https://se-education.org/guides/tutorials/checkstyleTutorial.html">this document</a> to find how to use it.</li>
-          <li><strong>To check Pug files for style errors</strong>, run <code>npm run lint</code> from the project root directory. You can use the <code>npm run lintfix</code> to automatically fix some of the javascript and css lint errors.</li>
+          <li><strong>To check Pug files for style errors</strong>, run <code v-pre="">npm run lint</code> from the project root directory. You can use the <code v-pre="">npm run lintfix</code> to automatically fix some of the javascript and css lint errors.</li>
         </ul>
 
         <h2 id="running-the-app-from-code">Running the app from code<a class="fa fa-anchor" href="#running-the-app-from-code" onclick="event.stopPropagation()"></a></h2>
         <div id="section-running-from-code">
           <ul>
-            <li>To run the app from code, run <code>gradlew run</code> from the project root. By default, it will run based on the config files in the <code>[project root]/config</code> folder.</li>
-            <li>To supply flags, you can use the <code>-Dargs=&quot;[FLAGS]&quot;</code> format.<br>
-              e.g., <code>gradlew run -Dargs=&quot;--since 31/12/2019 --formats java adoc xml&quot;</code></li>
+            <li>To run the app from code, run <code v-pre="">gradlew run</code> from the project root. By default, it will run based on the config files in the <code v-pre="">[project root]/config</code> folder.</li>
+            <li>To supply flags, you can use the <code v-pre="">-Dargs=&quot;[FLAGS]&quot;</code> format.<br>
+              e.g., <code v-pre="">gradlew run -Dargs=&quot;--since 31/12/2019 --formats java adoc xml&quot;</code></li>
           </ul>
         </div>
 
@@ -137,13 +149,13 @@
         <p><strong>You can use Vue.js devtools for frontend debugging on Chrome.</strong> Here are the steps:</p>
         <ol>
           <li>On your Chrome, visit the website of <a href="https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd">Vue.js devtools</a> and add the extension.</li>
-          <li>Go the detail page of this extension in Chrome's extension management panel and select <code>Allow access to file URLs</code>. If you are unable to locate it, copy the link: <code>chrome://extensions/?id=nhdogjmejiglipccpnnnanhbledajbpd</code> and visit it on your Chrome.</li>
+          <li>Go the detail page of this extension in Chrome's extension management panel and select <code v-pre="">Allow access to file URLs</code>. If you are unable to locate it, copy the link: <code v-pre="">chrome://extensions/?id=nhdogjmejiglipccpnnnanhbledajbpd</code> and visit it on your Chrome.</li>
           <li>Open any report generated by RepoSense.</li>
-          <li>Press <code>F12</code> or right click and choose <code>inspect</code> at the report page.</li>
-          <li>Choose <code>Vue</code> at the navigation bar.<br>
-            <a href="/images/choose-vue.png" target="_self"><img src="/images/choose-vue.png" alt class="img-fluid"></a></li>
+          <li>Press <code v-pre="">F12</code> or right click and choose <code v-pre="">inspect</code> at the report page.</li>
+          <li>Choose <code v-pre="">Vue</code> at the navigation bar.<br>
+            <a href="/images/choose-vue.png" target="_self"><img src="/images/choose-vue.png" alt="" class="img-fluid"></a></li>
           <li>Debug using the tool.<br>
-            <a href="/images/use-vue.png" target="_self"><img src="/images/use-vue.png" alt class="img-fluid"></a></li>
+            <a href="/images/use-vue.png" target="_self"><img src="/images/use-vue.png" alt="" class="img-fluid"></a></li>
         </ol>
         <box type="info" seamless>
           <p>See <a href="https://github.com/vuejs/vue-devtools">vue-devtools project home</a> page for more details.
@@ -154,11 +166,11 @@
         <p><strong>We use <a href="https://www.cypress.io/">Cypress</a> for automated end-to-end front-end testing.</strong></p>
         <h3 id="writing-tests">Writing tests<a class="fa fa-anchor" href="#writing-tests" onclick="event.stopPropagation()"></a></h3>
         <ol>
-          <li>Create a new test file in <code>frontend/cypress/tests</code></li>
-          <li>At project root start <em>Cypress Test Runner</em> by running <code>gradlew cypress</code></li>
-          <li>On the top right hand corner, set <code>Chrome</code> as the default browser</li>
+          <li>Create a new test file in <code v-pre="">frontend/cypress/tests</code></li>
+          <li>At project root start <em>Cypress Test Runner</em> by running <code v-pre="">gradlew cypress</code></li>
+          <li>On the top right hand corner, set <code v-pre="">Chrome</code> as the default browser</li>
           <li>Under <strong>Integration Tests</strong>, click on the newly created test file to run it
-            <a href="/images/cypress-test-runner.jpg" target="_self"><img src="/images/cypress-test-runner.jpg" alt class="img-fluid" title="Cypress Test Runner"></a></li>
+            <a href="/images/cypress-test-runner.jpg" target="_self"><img src="/images/cypress-test-runner.jpg" alt="" class="img-fluid" title="Cypress Test Runner"></a></li>
         </ol>
         <box type="info" seamless>
           <p>Read <a href="https://docs.cypress.io/api/commands/document.html#Syntax">Cypress's Documentation</a> to familiarize yourself with its syntax and <a href="https://docs.cypress.io/guides/guides/debugging.html#Log-Cypress-events">Cypress's debugging guide</a> to tackle problems with your tests.
@@ -166,9 +178,9 @@
         </box>
 
         <h3 id="running-tests">Running tests<a class="fa fa-anchor" href="#running-tests" onclick="event.stopPropagation()"></a></h3>
-        <p>To run all tests locally, run <code>gradlew frontendTest</code>.</p>
+        <p>To run all tests locally, run <code v-pre="">gradlew frontendTest</code>.</p>
         <box type="info" seamless>
-          <p>If you encountered an invalid browser error, ensure that you have <code>Chrome</code> installed in the default installation directory. Otherwise, follow the instructions <a href="https://docs.cypress.io/guides/guides/debugging.html#Launching-browsers">here</a> to create symbolic links so Cypress can locate <code>Chrome</code> in your system.
+          <p>If you encountered an invalid browser error, ensure that you have <code v-pre="">Chrome</code> installed in the default installation directory. Otherwise, follow the instructions <a href="https://docs.cypress.io/guides/guides/debugging.html#Launching-browsers">here</a> to create symbolic links so Cypress can locate <code v-pre="">Chrome</code> in your system.
           </p>
         </box>
 
@@ -201,7 +213,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Tue, 9 Jun 2020, 5:36:13 UTC]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sun, 14 Jun 2020, 4:17:16 UTC]</small></div>
     </footer>
   </div>
 </body>
