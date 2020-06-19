@@ -48,6 +48,7 @@
       "pageNav": 3,
       "src": "dg/architecture.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "architecture": "Architecture",
@@ -65,6 +66,7 @@
       "title": "Developer guide",
       "src": "dg/index.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "developer-guide": "Developer guide",
@@ -77,6 +79,7 @@
       "pageNav": 3,
       "src": "dg/projectManagement.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "project-maintenance": "Project Maintenance",
@@ -90,6 +93,7 @@
       "pageNav": 3,
       "src": "dg/report.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "html-report": "HTML report",
@@ -120,6 +124,7 @@
       "pageNav": 3,
       "src": "dg/settingUp.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "setting-up": "Setting up",
@@ -134,6 +139,7 @@
       "title": "Appendix: Style Guides",
       "src": "dg/styleGuides.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "appendix-style-guides": "Appendix: Style guides"
@@ -145,6 +151,7 @@
       "pageNav": 3,
       "src": "dg/workflow.md",
       "layout": "default",
+      "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
         "workflow": "Workflow",
