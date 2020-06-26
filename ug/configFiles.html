@@ -51,10 +51,10 @@
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/index.html"><strong>Overview</strong></a></div>
             </li>
             <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/usingReports.html"><strong>Using reports</strong></a></div>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/usingReports.html"><strong>Generating reports</strong></a></div>
             </li>
             <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/generatingReports.html"><strong>Generating reports</strong></a></div>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/generatingReports.html"><strong>Using reports</strong></a></div>
             </li>
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/customizingReports.html"><strong>Customizing reports</strong></a></div>
@@ -62,33 +62,39 @@
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/sharingReports.html"><strong>Sharing reports</strong></a></div>
             </li>
-            <li class="site-nav-custom-list-item site-nav-list-item-0"><strong>Appendices</strong></li>
             <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/cli.html">  CLI syntax reference</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/configFiles.html" class="current">  Config files format</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/usingAuthorTags.html">  Using <code v-pre="">@@author</code> tags</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/withNetlify.html">  RepoSense with Netlify</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/withGithubActions.html">  RepoSense with GitHub Actions</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/withTravis.html">  RepoSense with Travis</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/runSh.html">  <code v-pre="">run.sh</code> format</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/faq.html">  FAQ</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/ug/troubleshooting.html">  Troubleshooting</a></div>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Appendices</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/cli.html">CLI syntax reference</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/configFiles.html">Config files format</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/usingAuthorTags.html">Using <code v-pre="">@@author</code> tags</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/withNetlify.html">RepoSense with Netlify</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/withGithubActions.html">RepoSense with GitHub Actions</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/withTravis.html">RepoSense with Travis</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/runSh.html"><code v-pre="">run.sh</code> format</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/faq.html">FAQ</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/ug/troubleshooting.html">Troubleshooting</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -96,7 +102,8 @@
 
       <div id="content-wrapper">
         <div></div>
-        <h1 class="display-4" id="appendix-config-files-format">Appendix: Config files format<a class="fa fa-anchor" href="#appendix-config-files-format" onclick="event.stopPropagation()"></a></h1>
+        <div></div>
+        <h1 class="display-4" id="appendix-config-files-format"><span>Appendix: Config files format</span><a class="fa fa-anchor" href="#appendix-config-files-format" onclick="event.stopPropagation()"></a></h1>
         <div class="lead">
           <p>Given below are the details of the various config files used by RepoSense.</p>
         </div>
@@ -326,7 +333,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Fri, 19 Jun 2020, 16:31:37 UTC]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Fri, 26 Jun 2020, 6:50:49 UTC]</small></div>
     </footer>
   </div>
 </body>

@@ -75,21 +75,21 @@
       "headingKeywords": {}
     },
     {
-      "title": "Project Management",
+      "title": "Project management",
       "pageNav": 3,
       "src": "dg/projectManagement.md",
       "layout": "default",
       "header": "productionSiteHeader.md",
       "siteNav": "dgSiteNav.md",
       "headings": {
-        "project-maintenance": "Project Maintenance",
+        "project-management": "Project management",
         "merging-prs": "Merging PRs",
         "deploying-the-production-website": "Deploying the production website"
       },
       "headingKeywords": {}
     },
     {
-      "title": "HTML Report",
+      "title": "HTML report",
       "pageNav": 3,
       "src": "dg/report.md",
       "layout": "default",
@@ -136,7 +136,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Appendix: Style Guides",
+      "title": "Appendix: Style guides",
       "src": "dg/styleGuides.md",
       "layout": "default",
       "header": "productionSiteHeader.md",
@@ -173,11 +173,11 @@
       "headingKeywords": {}
     },
     {
-      "title": "Showcase of use cases",
+      "title": "Showcase",
       "src": "showcase.md",
       "layout": "default",
       "headings": {
-        "showcase-of-use-cases": "Showcase of use cases",
+        "showcase": "Showcase",
         "case-1-monitoring-student-programmers-individual-projects": "Case 1: Monitoring student programmers (individual projects)",
         "case-2-monitoring-student-programmers-team-projects": "Case 2: Monitoring student programmers (team projects)",
         "case-3-monitoring-student-programmers-multiple-external-projects": "Case 3: Monitoring student programmers (multiple external projects)"
@@ -237,7 +237,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "FAQ",
+      "title": "Appendix: FAQ",
       "pageNav": 3,
       "src": "ug/faq.md",
       "layout": "default",
@@ -257,7 +257,7 @@
       "layout": "default",
       "siteNav": "ugSiteNav.md",
       "headings": {
-        "generating-reports": "Generating reports",
+        "generating-a-report": "Generating a report",
         "generating-reports-locally": "Generating reports locally",
         "generating-reports-remotely": "Generating reports remotely"
       },
@@ -277,7 +277,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "run.sh format",
+      "title": "Appendix: `run.sh` format",
       "src": "ug/runSh.md",
       "layout": "default",
       "siteNav": "ugSiteNav.md",
@@ -302,7 +302,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Troubleshooting",
+      "title": "Appendix: Troubleshooting",
       "pageNav": 3,
       "src": "ug/troubleshooting.md",
       "layout": "default",
@@ -318,7 +318,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Using `@@author` tags",
+      "title": "Appendix: Using `@@author` tags",
       "src": "ug/usingAuthorTags.md",
       "layout": "default",
       "siteNav": "ugSiteNav.md",
@@ -344,26 +344,26 @@
       "headingKeywords": {}
     },
     {
-      "title": "Using RepoSense with GitHub Actions",
+      "title": "Appendix: RepoSense with GitHub Actions",
       "pageNav": 3,
       "src": "ug/withGithubActions.md",
       "layout": "default",
       "siteNav": "ugSiteNav.md",
       "headings": {
-        "appendix-using-reposense-with-github-actions": "Appendix: Using RepoSense with GitHub Actions",
+        "appendix-reposense-with-github-actions": "Appendix: RepoSense with GitHub Actions",
         "setting-up": "Setting up",
         "updating-the-report": "Updating the report"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Publishing the dashboard - with Netlify",
+      "title": "Appendix: RepoSense with Netlify",
       "pageNav": 3,
       "src": "ug/withNetlify.md",
       "layout": "default",
       "siteNav": "ugSiteNav.md",
       "headings": {
-        "appendix-using-reposense-with-netlify": "Appendix: Using RepoSense with Netlify",
+        "appendix-reposense-with-netlify": "Appendix: RepoSense with Netlify",
         "setting-up": "Setting up",
         "pr-previews": "PR previews",
         "updating-the-report": "Updating the report"
@@ -371,13 +371,13 @@
       "headingKeywords": {}
     },
     {
-      "title": "Using RepoSense with Travis",
+      "title": "Appendix: RepoSense with Travis",
       "pageNav": 3,
       "src": "ug/withTravis.md",
       "layout": "default",
       "siteNav": "ugSiteNav.md",
       "headings": {
-        "appendix-using-reposense-with-travis": "Appendix: Using RepoSense with Travis",
+        "appendix-reposense-with-travis": "Appendix: RepoSense with Travis",
         "setting-up": "Setting up",
         "updating-the-report": "Updating the report"
       },

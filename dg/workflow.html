@@ -60,21 +60,33 @@
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/settingUp.html"><strong>Setting up</strong></a></div>
             </li>
             <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/workflow.html" class="current"><strong>Workflow</strong></a></div>
-            </li>
-            <li class="site-nav-custom-list-item site-nav-list-item-0"><strong>Design and implementation</strong></li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/architecture.html">  Architecture</a></div>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/workflow.html"><strong>Workflow</strong></a></div>
             </li>
             <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/report.html">  HTML report</a></div>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Design and implementation</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/dg/architecture.html">Architecture</a></div>
+                </li>
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/dg/report.html">HTML report</a></div>
+                </li>
+              </ul>
             </li>
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/projectManagement.html"><strong>Project management</strong></a></div>
             </li>
-            <li class="site-nav-custom-list-item site-nav-list-item-0"><strong>Appendices</strong></li>
             <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/dg/styleGuides.html">  Style guides</a></div>
+              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><strong>Appendices</strong>
+                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+                <li>
+                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/dg/styleGuides.html">Style guides</a></div>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -82,7 +94,8 @@
 
 
       <div id="content-wrapper">
-        <h1 class="display-4" id="workflow">Workflow<a class="fa fa-anchor" href="#workflow" onclick="event.stopPropagation()"></a></h1>
+        <div></div>
+        <h1 class="display-4" id="workflow"><span>Workflow</span><a class="fa fa-anchor" href="#workflow" onclick="event.stopPropagation()"></a></h1>
         <div class="lead">
           <p>Our workflow is mostly based on the guidelines given at <a href="http://se-education.org/guides">se-education.org/guides</a>.</p>
         </div>
@@ -103,7 +116,8 @@
               <p><span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix: Coding Standards</p>
             </template>
             <div>
-              <h1 class="display-4" id="appendix-style-guides">Appendix: Style guides<a class="fa fa-anchor" href="#appendix-style-guides" onclick="event.stopPropagation()"></a></h1>
+              <div></div>
+              <h1 class="display-4" id="appendix-style-guides"><span>Appendix: Style guides</span><a class="fa fa-anchor" href="#appendix-style-guides" onclick="event.stopPropagation()"></a></h1>
               <div class="lead">
                 <p>Our coding standards are mostly based on those at <a href="https://se-education.org/guides">se-education.org/guides</a>.</p>
               </div>
@@ -205,7 +219,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Fri, 19 Jun 2020, 16:31:37 UTC]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Fri, 26 Jun 2020, 6:50:49 UTC]</small></div>
     </footer>
   </div>
 </body>
