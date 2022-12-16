@@ -5,7 +5,7 @@ with(this){return _c('div',{attrs:{"id":"app"}},[_c('header',{attrs:{"fixed":""}
 };
     var pageVueStaticRenderFns = [function anonymous(
 ) {
-with(this){return _c('h1',{staticClass:"display-4",attrs:{"id":"appendix-run-sh-format"}},[_c('span',{staticClass:"anchor",attrs:{"id":"appendix-run-sh-format"}}),_c('span',[_v("Appendix: "),_c('a',{attrs:{"href":"http://run.sh"}},[_v("run.sh")]),_v(" format")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#appendix-run-sh-format","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h1',{staticClass:"display-4",attrs:{"id":"appendix-run-sh-format"}},[_c('span',{staticClass:"anchor",attrs:{"id":"appendix-run-sh-format"}}),_c('span',[_v("Appendix: run.sh format")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#appendix-run-sh-format","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('div',{staticClass:"lead"},[_c('p',[_c('a',{attrs:{"href":"https://github.com/reposense/publish-RepoSense/blob/master/run.sh"}},[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("run.sh")])]),_v(" is a script used for automating RepoSense report generation.")])])}
@@ -26,6 +26,6 @@ with(this){return _c('p',[_v("Depending on which version you wish to use for rep
 with(this){return _c('ul',[_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("--release")]),_v(": Use the latest release (Stable)")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("--master")]),_v(": Use the latest version of the master branch")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("--tag TAG")]),_v(" (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("--tag v1.6.1")]),_v("): Use the version identified by the Git tag given")]),_v(" "),_c('li',[_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("--commit COMMIT")]),_v(" (e.g. "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("--commit abc123")]),_v("): Use the version identified by the Git commit SHA given")])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 3.1.1")]),_v(", generated on Wed, 15 Jun 2022, 4:45:47 UTC]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 4.0.2")]),_v(", generated on Fri, Dec 16, 2022, 1:16:53 PM UTC]")])])])}
 }];
   
